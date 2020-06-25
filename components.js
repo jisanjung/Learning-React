@@ -10,6 +10,8 @@ class App extends Component {
     render() {
         return (
             // jsx
+            // can only be ONE element
+            // will give error if more than one, so always wrap
             <div className="App">
                 <h1>Hello World</h1>
             </div>
