@@ -13,10 +13,10 @@ constructor() {
 // props
 // props are values that are passed into that component when it is invoked and used within the component
 // props should never change
-<Item value={1}/> // passed
+<Item value={1}/> // passed similar to invoking a function
 class Item extends React.Component {
     render() {
-        return this.props.value // 1 is passed in
+        return this.props.value // 1 is used from being passed in
     }
 }
 
