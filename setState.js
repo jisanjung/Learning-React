@@ -22,3 +22,23 @@ changeName = (name) => {
 // this way is preferred
 // changeName is binded to the current class
 // "bill" is taken as an argument to changeName
+
+
+// inside the setState function, you want to change the state by rewriting the state as a whole.
+// example:
+this.state = {
+    users: [
+        {name: "joe"},
+        {name: "tim"},
+        {name: "bob"}
+    ]
+};
+// the state is always an object
+// you want to imagine you are placing the state object inside the setState method when changing state
+this.setState({
+    user: [
+        {name: "jason"},
+        {name: "giovanna"},
+        {name: "desmond"}
+    ]
+});
