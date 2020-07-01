@@ -23,3 +23,7 @@ class Item extends React.Component {
 
 // main difference between them is that state data can be changed while props do not change.
 // state is mostly done within the component while props can be used outside of the component.
+
+
+<Home>{this.props.children}</Home>
+// props.children returns the children elements inside given component
