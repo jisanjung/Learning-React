@@ -42,3 +42,5 @@ this.setState({
         {name: "desmond"}
     ]
 });
+
+// anytime a function uses the "this" keyword, you have to bind(this) when the function is invoked
