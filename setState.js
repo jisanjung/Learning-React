@@ -44,3 +44,15 @@ this.setState({
 });
 
 // anytime a function uses the "this" keyword, you have to bind(this) when the function is invoked
+
+
+
+// you can run callback functions on the setState method to see the updated state
+state = {
+    health: 100
+}
+this.setState({
+    health: this.state.health - 1
+}, () => {
+    console.log(this.state.health); // 99
+})

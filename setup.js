@@ -1,5 +1,5 @@
 // start
-// "npm creat-react-app ." in terminal
+// "npx create-react-app ." in terminal
 
 // create-react-app gives you packages to deploy
 
