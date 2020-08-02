@@ -66,3 +66,27 @@ return (
     {this.props.children}
 </Context.Provider>
 // this value property can be access in all child components
+
+
+// to access data in another component, do the following
+// import the Context.js, and have it surround your jsx
+// instead of .Provider, now append a .Consumer
+// only way to access the values from the provider is using an arrow function
+// this arrow function takes in the "context" or the value from the provider.
+// you can then return jsx and do whatever with this value
+import React, { Component } from 'react';
+import Context from "./Context"
+
+export class List extends Component {
+    render() {
+        return (
+            <Context.Consumer>
+                {context => {
+                    (<h1>{context.name}</h1>)
+                }}
+            </Context.Consumer>
+        )
+    }
+}
+
+export default List
