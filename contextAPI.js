@@ -82,7 +82,9 @@ export class List extends Component {
         return (
             <Context.Consumer>
                 {context => {
-                    (<h1>{context.name}</h1>)
+                    return (
+                        <h1>{context.name}</h1>
+                    )
                 }}
             </Context.Consumer>
         )
@@ -90,3 +92,18 @@ export class List extends Component {
 }
 
 export default List
+
+
+// destructuring the value in the consumer can allow for multiple values to be passed in
+return (
+    <Context.Consumer>
+        {context => {
+
+            const { value1, value2 } = context;
+
+            return (
+                <h1>{context.name}</h1>
+            )
+        }}
+    </Context.Consumer>
+)
